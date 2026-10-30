@@ -26,8 +26,31 @@ provide('products', products)
 </template>
 
 <style scoped>
+:global(body) {
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .app-container {
+  margin: 0;
+  background-color: azure;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin: 50px 0;
+  flex-wrap: wrap;
 }
 </style>
